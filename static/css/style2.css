@@ -1,0 +1,276 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  color: #222;
+}
+
+.navbar{
+  padding: .8rem;
+}
+
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+.buttoncol{
+  width: 48px;
+  border-radius: 7px;
+  display: none;
+}
+.logo{
+  width: 175px;
+  height: 125px;
+  margin-left: 50px;
+}
+
+.fix{
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.fix p label{
+  font-size:20px;
+}
+
+.fix p input{
+  float:right;
+  margin-left: 5px;
+  border-color: lightgreen;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.fix2{
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.fix2 p label{
+  font-size:20px;
+}
+
+.fix2 p input{
+  float:right;
+  margin-left: 5px;
+  border-color: lightgreen;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.fix2 p select{
+  float: right;
+  margin-left: 5px;
+  width: 100px;
+  height: auto;
+}
+
+.imcTable{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.2em;
+  min-width: 400px;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.imcTable thead tr{
+  background-color: lightgray;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+
+.imcTable tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+
+.imcTable th, .imcTable td{
+  padding: 12px 15px;
+}
+
+.imcTable tbody tr:last-of-type{
+  border-bottom: 2px solid lightgray;
+}
+
+#leftcontainer{
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #d9d9d9;
+}
+
+#centercontainer{
+  height: 100%;
+}
+
+.imagemIMC{
+  vertical-align: top;
+  width: 250px;
+  height: auto;
+  margin:50px 15px 15px 15px;
+}
+
+.imagemCI{
+  vertical-align: top;
+  width: 275px;
+  height: auto;
+  margin: -20px 0 -20px 0;
+}
+
+.progressC{
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  height: 40px;
+  width:85%;
+  float:left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+h3.title{
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h5.title{
+  margin-top: 90px;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h3.titleb{
+  margin-top: 10px;
+  margin-bottom:10px;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h5.titleb{
+  margin-bottom: 90px;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h5.titles{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 55px;
+  margin-top: 47px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.progress{
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  height: 40px;
+  width:500px;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-left: 55px;
+  margin-bottom: 0;
+}
+
+.progress-done{
+  background: linear-gradient(to left, #66ff66, #00cccc);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card{
+  border-color: #b3cccc;
+  background: linear-gradient(to left, #c2d6d6, #b3cccc)
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  .buttoncol{
+    width: 48px;
+    border-radius: 7px;
+    display: block;
+  }
+
+}
+@media (max-width: 576px) {
+   .buttoncol{
+    width: 48px;
+    border-radius: 7px;
+    display: block;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  //*background-image: url('img/mac.png'); --*/
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
